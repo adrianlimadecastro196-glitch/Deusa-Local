@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+ollama serve &
+sleep 3
+clear
+echo "🧠 IA LIVRE - SEM CENSURA"
+echo "Modelo: dolphin-mistral:7b"
+echo "=========================="
+ollama run dolphin-mistral:7b
+termux-wake-unlock

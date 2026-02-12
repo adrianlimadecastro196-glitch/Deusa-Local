@@ -1,0 +1,18 @@
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+clear
+echo "🔥 IA SEM CENSURA — LIVRE • TOTAL • ILIMITADA 🔥"
+echo "========================================"
+echo "Escolha seu modelo:"
+echo "1) Phi3 Turbo (rápido)"
+echo "2) Qwen (português)"
+echo "3) Dolphin (liberdade total)"
+echo "4) Tiny (instantâneo)"
+read -p "👉 " escolha
+case $escolha in
+  1) ollama run phi3:3.8b-mini-4k-instruct-q4_0 ;;
+  2) ollama run qwen2.5:7b-instruct-q4_0 ;;
+  3) ollama run dolphin2.2-mistral:7b-q4_0 ;;
+  4) ollama run tinyllama:1.1b ;;
+esac
+termux-wake-unlock

@@ -1,0 +1,14 @@
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+clear
+echo "🧿 DEUSA LITE — LIVRE • RÁPIDA • SEM CENSURA 🧿"
+echo "=========================================="
+echo "Escolha seu oráculo:"
+echo "1) Phi3 Turbo (instantâneo - já baixado)"
+echo "2) Qwen Sábio (melhor PT)"
+read -p "👉 " escolha
+case $escolha in
+  1) ollama run phi3:3.8b-mini-4k-instruct-q4_0 ;;
+  2) ollama run qwen2.5:7b-instruct-q4_0 ;;
+esac
+termux-wake-unlock
