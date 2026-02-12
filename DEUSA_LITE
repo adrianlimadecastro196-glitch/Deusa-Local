@@ -4,7 +4,7 @@ clear
 echo "🧿 DEUSA LITE — LIVRE • RÁPIDA • SEM CENSURA 🧿"
 echo "=========================================="
 echo "Escolha seu oráculo:"
-echo "1) Phi3 Turbo (instantâneo - já baixado)"
+echo "1) Phi3 Turbo (instantâneo)"
 echo "2) Qwen Sábio (melhor PT)"
 read -p "👉 " escolha
 case $escolha in
